@@ -1,1 +1,44 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Adventure";
+  src: url("../Fonts//Adventure.ttf.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Alphakind";
+  src: url("../Fonts//Alphakind.otf") format("opentype");
+  font-weight: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+:root {
+  --font-family-nav: "Adventure", sans-serif;
+  --font-family-1: "Alphakind", sans-serif;
+  --font-family-2: "Amatic SC", sans-serif;
+  --navbar-color: #1ab9ff;
+  --hero-banner-color: #ff6f96;
+  --h1-font-color: #343f3c;
+  --white-color: #fff;
+  --logo-font-size: 38px;
+  --nav-font-size: 15px;
+  --h1-font-size: 58px;
+  --h2-font-size: 47px;
+}
+
+/* .bg-navbar {
+  background: var(--navbar-color);
+}
+.navbar-logo {
+  color: var(--white-color);
+  font-size: var(--logo-font-size);
+} */
+/* .nav-item .nav-link {
+  color: var(--white-color);
+  font-size: var(--nav-font-size);
+} */
+
+body {
+  font-family: var(--font-family-nav);
+}
+h1 {
+  font-family: var(--font-family-1);
+}
