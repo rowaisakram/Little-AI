@@ -434,7 +434,84 @@ button:hover{
     width: 70% !important;
     height: 400px !important;
 }
+#clients{
+      padding: 120px 0px;
+}
 
+  .client-header h2{
+    font-family: var(--font-family-3);
+    color: var(--blue-color);
+    font-size: 60px;
+  }
+
+  .client-header p{
+    font-family: var(--font-family-2);
+    font-size: 18px;
+    padding: 0px 100px;
+  }
+    #clients .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    #clients .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #clients .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #clients .card{
+          background: var(--secondary);
+    padding: 40px 50px 40px 40px;
+    border-radius: 6px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+        #clients .card p{
+font-family: var(--font-family-2);
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white-color);
+    }
+
+    .client figure {
+          max-width: 20%;
+    border-radius: 50px;
+    margin-right: 10px;
+    }
+    .client{
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .users p{
+      margin: 0 !important;
+    }
+    .users p:nth-child(1){
+      font-family: var(--font-family-3);
+      font-size: 30px;
+          line-height: 30px;
+    }
+        .users p:nth-child(2){
+      font-family: var(--font-family-2);
+      font-size: 15px;
+    }
+    .client-slider{
+      margin-top: 30px;
+    }
+    .swiper-pagination span{
+      width: 20px !important;
+      height: 20px !important;
+      background-color: red;
+    }
 
  @media (max-width: 1440px){
 .swiper-button-next{
