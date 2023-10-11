@@ -17,8 +17,12 @@
 </head>
 
 <body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
 
-  <nav class="navbar bg-custom-blue">
+
+  <nav class="navbar bg-custom-blue sticky-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -183,6 +187,68 @@
                       <h6>$<span>30</span></h6>
                       <p>Per Month</p>
                     </div>
+                    <div class="text-center"><img src="./img/img2.png" />
+                      <h4>Basic</h4>
+                      <hr>
+                    </div>
+                    <ul>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                    </ul>
+                    <div class="text-center"><button>Order NOw</button></div>
+                  </div>
+
+                </div>
+                <p class="price-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis
+                  dicta pariatur eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="price-box-main ">
+              <div class="price-box second-color">
+                <div class="price-card">
+                  <div class="price-inner">
+                    <div class="custom-price">
+                      <h6>$<span>30</span></h6>
+                      <p>Per Month</p>
+                    </div>
+                    <div class="text-center"><img src="./img/img3.png" />
+                      <h4>Basic</h4>
+                      <hr>
+                    </div>
+                    <ul>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                    </ul>
+                    <div class="text-center"><button>Order NOw</button></div>
+                  </div>
+
+                </div>
+                <p class="price-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis
+                  dicta pariatur eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="price-box-main ">
+              <div class="price-box third-color">
+                <div class="price-card">
+                  <div class="price-inner">
+                    <div class="custom-price">
+                      <h6>$<span>30</span></h6>
+                      <p>Per Month</p>
+                    </div>
                     <div class="text-center"><img src="./img/img1.png" />
                       <h4>Basic</h4>
                       <hr>
@@ -205,8 +271,6 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4"></div>
         </div>
       </div>
     </div>
@@ -252,6 +316,13 @@
         }
       }
     });
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        document.querySelector(".loader-wrapper").style.display = "none";
+      }, 3000); // 3000ms = 3 seconds
+    });
+
+
   </script>
 </body>
 
