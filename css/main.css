@@ -430,3 +430,60 @@ button:hover{
     width: 1680px !important;
 }
 }
+
+@media (max-width: 1440px){
+  figure img {
+    width: 100%;
+}
+.left-box h1 {
+    font-size: 52px !important;
+}
+.left-box h3 {
+    font-size: 26px !important;
+}
+.left-box h1::after {
+    height: 70%;
+}
+#video-placeholder{
+  width: 100% !important;
+}
+.love-section-right h2 {
+    font-size: 45px !important;
+    line-height: 48px;
+}
+.love-section-right h3::before {
+    left: -6%;
+    width: 40%;
+}
+.love-section-right h3::after {
+    width: 40%;
+    right: -11%;
+}
+#courses {
+    padding: 80px 0px;
+}
+#courses h2 {
+    margin-bottom: 50px;
+}
+.course-slider .swiper-slide .card-body {
+    padding: 0px !important;
+}
+.custom-price {
+    width: 37%;;
+}
+.price-box-main ul li {
+    font-size: 15px;
+}
+}
+@media (max-width: 1024px){
+.left-box h1 {
+    font-size: 42px !important;
+}
+.left-box h3 {
+    font-size: 18px !important;
+}
+#video-placeholder {
+    width: 70% !important;
+    height: 400px !important;
+}
+}
