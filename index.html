@@ -1,86 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Little AI</title>
-    <!--Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--Bootstrap CSS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
 
-    <!--CSS-->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <!--Main Navigation-->
-    <header>
-      <!-- Navbar -->
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-primary navbar-light">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand" href="#">Brand</a>
+<head>
+  <title>Little AI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
 
-          <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+<body>
 
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-
-            <!-- Icons -->
-            <ul class="navbar-nav d-flex flex-row me-1">
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#"
-                  ><i class="fas fa-shopping-cart"></i
-                ></a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-            </ul>
+  <nav class="navbar bg-custom-blue">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Little AI</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">our process</a></li>
+          <li><a href="#">pricing</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="main-banner">
+    <div class="container">
+      <div class="banner-wrapper py-3">
+        <div class="row ">
+          <div class="col-lg-6  text-left">
+            <div class="left-box">
+              <h1 class="position-relative">start learning with</h1>
+              <h3>Artificial Intelligence</h3>
+            </div>
+          </div>
+          <div class="col-lg-6 text-right">
+            <figure><img src="./img//hero-img.png" width="100%"></figure>
           </div>
         </div>
-        <!-- Container wrapper -->
-      </nav>
-      <!-- Navbar -->
-      <!-- Navbar -->
-    </header>
-    <!--Main Navigation-->
-    <!--Main Layout-->
-    <main></main>
-    <!--Main Layout-->
-    <!--Footer-->
-    <footer></footer>
-    <!--Footer-->
-    <!--Bootstrap Script-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-center video">
+            <div id="video-placeholder" style="width: 70%; height: 600px; position: relative; cursor: pointer;"
+              onclick="playVideo(event)">
+              <img src="./img/thumb.png" alt="Video Thumbnail" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="love-animation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="love-section">
+            <figure>
+              <img src="./img/robot.png" alt="rebort " width="100%" height="auto" />
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="love-section-right text-center">
+            <h3>Our Love For Animation</h3>
+            <h2>We're Storytelling Experts With Creative Smarts</h2>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Quis ipsum suspendisse ultrices gravida.</P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Lorem Ipsum is simply dummy?</h2>
+          <div class="course-slider">
+            <div class="swiper-container overflow-hidden">
+              <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <span>
+                        <figure><img src="./img/book.png" width="100%" alt="cource-1" /></figure>
+                      </span>
+                      <h4>Class 1</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <span>
+                        <figure><img src="./img/purple.png" width="100%" alt="cource-1" /></figure>
+                      </span>
+                      <h4>Class 1</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <span>
+                        <figure><img src="./img/book.png" width="100%" alt="cource-1" /></figure>
+                      </span>
+                      <h4>Class 1</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <span>
+                        <figure><img src="./img/gray.png" width="100%" alt="cource-1" /></figure>
+                      </span>
+                      <h4>Class 1</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <span>
+                        <figure><img src="./img/book.png" width="100%" alt="cource-1" /></figure>
+                      </span>
+                      <h4>Class 1</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation Controls -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center text-uppercase mb-3">pricing!</h2>
+        </div>
+      </div>
+      <div class="price-container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="price-box-main ">
+              <div class="price-box">
+                <div class="price-card">
+                  <div class="price-inner">
+                    <div class="custom-price">
+                      <h6>$<span>30</span></h6>
+                      <p>Per Month</p>
+                    </div>
+                    <div class="text-center"><img src="./img/img1.png" />
+                      <h4>Basic</h4>
+                      <hr>
+                    </div>
+                    <ul>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/check.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                      <li><img src="./img/cross.png" width="8%"><span>Lorem ipsen dolor sit amet dolor sit.</span></li>
+                    </ul>
+                    <div class="text-center"><button>Order NOw</button></div>
+                  </div>
+
+                </div>
+                <p class="price-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis
+                  dicta pariatur eaque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script>
+    function playVideo() {
+      var iframe = document.createElement('iframe');
+      iframe.width = '70%';
+      iframe.height = '400';
+      iframe.src = 'https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1';
+      iframe.frameborder = '0';
+      iframe.allowfullscreen = true;
+
+      document.getElementById('video-placeholder').replaceWith(iframe);
+    }
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        }
+      }
+    });
+  </script>
+</body>
+
 </html>
