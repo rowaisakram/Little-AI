@@ -26,6 +26,7 @@
   --white-color: #fff;
   --blue-color: #32355d;
   --gray: #e1e595;
+  --bg: #f5fbfb;
 }
 h1 {
   font-family: var(--font-family-1) !important;
@@ -117,7 +118,7 @@ a {
   background-position: -5%;
   background-size: contain;
   padding: 60px 0px;
-  margin-top: 100px;
+  margin: 100px 0px;
   position: relative;
 }
 .love-section img {
@@ -169,6 +170,7 @@ a {
 }
 #courses {
   padding: 80px 0px 50px 0px;
+  background-color: var(--bg);
 }
 
 #courses .course-slider {
@@ -270,7 +272,7 @@ figure img {
   overflow: hidden;
 } */
 #pricing {
-  padding: 0px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
   background: url(../img/slider.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -462,6 +464,10 @@ button:hover {
 }
 #clients {
   padding: 120px 0px;
+  background: url(../img//cource-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .client-header h2 {
