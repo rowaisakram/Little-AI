@@ -282,7 +282,81 @@
           quas libero ducimus expedita similique asperiores totam quae?</p>
       </div>
       <div class="client-slider">
+        <div class="course-slider">
+          <div class="swiper-containers overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="slider-card swiper-slide">
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="client">
+                  <figure><img src="./img/profile.avif" width="100%" /></figure>
+                  <div class="users">
+                    <p>Russell</p>
+                    <p>Dad of four girls</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-card swiper-slide">
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="client">
+                  <figure><img src="./img/profile.avif" width="100%" /></figure>
+                  <div class="users">
+                    <p>Russell</p>
+                    <p>Dad of four girls</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-card swiper-slide">
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="client">
+                  <figure><img src="./img/profile.avif" width="100%" /></figure>
+                  <div class="users">
+                    <p>Russell</p>
+                    <p>Dad of four girls</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-card swiper-slide">
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="client">
+                  <figure><img src="./img/profile.avif" width="100%" /></figure>
+                  <div class="users">
+                    <p>Russell</p>
+                    <p>Dad of four girls</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-card swiper-slide">
+                <div class="card">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="client">
+                  <figure><img src="./img/profile.avif" width="100%" /></figure>
+                  <div class="users">
+                    <p>Russell</p>
+                    <p>Dad of four girls</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Navigation Controls -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
       </div>
     </div>
     </div>
@@ -331,6 +405,26 @@
         }
       }
     });
+
+
+
+    var swiper1 = new Swiper('.swiper-containers', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000, // This means the slide will change every 5 seconds
+        disableOnInteraction: false, // This will ensure the autoplay continues after user interaction
+      },
+      loop: true,
+    });
+
+
+
+
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         document.querySelector(".loader-wrapper").style.display = "none";
