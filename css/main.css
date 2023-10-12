@@ -27,6 +27,7 @@
   --blue-color: #32355d;
   --gray: #e1e595;
   --bg: #f5fbfb;
+  --footer-bg: #b4f0ff;
 }
 h1 {
   font-family: var(--font-family-1) !important;
@@ -422,6 +423,13 @@ button:hover {
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
+.swiper-pagination span {
+  width: 15px;
+  height: 15px;
+}
+.swiper-pagination {
+  bottom: 40px !important;
+}
 
 @keyframes loader {
   0% {
@@ -468,6 +476,7 @@ button:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .client-header h2 {
@@ -489,7 +498,6 @@ button:hover {
 #clients .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,6 +590,55 @@ button:hover {
 #clients .swiper-wrapper > .swiper-slide:nth-child(2n) {
   margin-top: unset;
 }
+#footer {
+  padding: 80px 0px;
+  background-color: var(--footer-bg);
+}
+.footer h4 {
+  font-family: var(--font-family-2);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.footer li {
+  font-family: var(--font-family-2);
+  font-size: 14px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.footer ul {
+  padding-left: 0px !important;
+}
+.footer li i {
+  margin-right: 10px;
+}
+.footer-bottom ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px !important;
+}
+.footer-bottom ul li {
+  border-right: 1px solid gray;
+  padding: 0px 20px;
+  font-family: var(--font-family-2);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.footer-bottom ul li:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease-out;
+}
+.footer-menu {
+  background: var(--white-color);
+  padding: 20px;
+  border-radius: 42px;
+}
+.footer-bottom h1 {
+  color: var(--white-color);
+  margin: 20px 0px;
+  cursor: pointer;
+}
 
 @media (max-width: 1440px) {
   .swiper-button-next {
@@ -646,6 +703,22 @@ button:hover {
   .video #video-placeholder {
     height: 500px !important;
   }
+  .price-container .row > div {
+    width: 33% !important;
+  }
+  .price-container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .row > div {
+    width: 25% !important;
+  }
+  .footer .row {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 768px) {
   .left-box h1::after {
@@ -701,9 +774,62 @@ button:hover {
   .price-box-main .price-box .price-card {
     padding: 25px;
   }
+  #pricing,
+  #clients,
+  #footer {
+    padding: 50px 0px;
+  }
 }
 @media (max-width: 425px) {
   .banner-wrapper .row div {
     width: 100% !important;
+  }
+  .footer-bottom {
+    display: none;
+  }
+  .price-container .row > div {
+    width: 100% !important;
+  }
+  .footer .row > div {
+    width: 50% !important;
+  }
+  .footer .row {
+    flex-wrap: wrap;
+  }
+  .client-header p {
+    font-family: var(--font-family-2);
+    font-size: 16px;
+    padding: 0px;
+  }
+  h2 {
+    font-size: 50px !important;
+  }
+  #pricing {
+    padding: 20px 0px;
+    background-position: center;
+  }
+  #courses {
+    padding: 40px 0px;
+  }
+  .swiper-pagination {
+    bottom: 18px !important;
+  }
+  .banner-wrapper .row > div:nth-child(2) {
+    display: none;
+  }
+  .banner-wrapper {
+    padding: 50px 0px;
+  }
+  .left-box h1 {
+    font-size: 39px !important;
+  }
+  .left-box h3 {
+    text-align: center !important;
+  }
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
